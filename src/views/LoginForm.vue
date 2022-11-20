@@ -28,12 +28,13 @@
   export default ({
     setup() {
     const checkLoginPassword = (email, password) => {
-      if(email == "admin" && password == "admin"){
-        router.push({ path: '/WeatherView' })
-      }
-      else{
-        alert("WRONG PASSWORD OR LOGIN")
-      }
+      router.push({ path: '/WeatherView' })
+      // if(email == "admin" && password == "admin"){
+      //   router.push({ path: '/WeatherView' })
+      // }
+      // else{
+      //   alert("WRONG PASSWORD OR LOGIN")
+      // }
     }
       
       return{
